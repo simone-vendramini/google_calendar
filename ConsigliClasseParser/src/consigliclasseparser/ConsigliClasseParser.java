@@ -27,7 +27,7 @@ public class ConsigliClasseParser {
         Parser dom = new Parser();
         BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
         try {
-            System.out.println("Digitare percorso file XML");
+            System.out.println("Inserire percorso file XML");
             String percorso=inFromUser.readLine();
             links = dom.parseDocument(percorso);
         } catch (ParserConfigurationException | SAXException | IOException exception) {
